@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="90" id="Z05-va-22s" customClass="HouseListTableViewCell" customModule="ReminderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="497" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z05-va-22s" id="aWr-GQ-gdf">
+                <rect key="frame" x="0.0" y="0.0" width="497" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="mje-rp-Xzf">
+                        <rect key="frame" x="15" y="19.999999999999996" width="168.33333333333334" height="51.666666666666657"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="掃除" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ri9-eY-h41">
+                                <rect key="frame" x="0.0" y="0.0" width="168.33333333333334" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主にリビングを片付ける" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsd-5e-3SY">
+                                <rect key="frame" x="0.0" y="31.333333333333336" width="168.33333333333334" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgb-co-h9d">
+                        <rect key="frame" x="446" y="45" width="31" height="30"/>
+                        <state key="normal" title="削除"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021/06/17/11:23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwK-V2-Gij">
+                        <rect key="frame" x="383" y="16" width="109" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通知日時" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0a-ak-e0W">
+                        <rect key="frame" x="427.66666666666669" y="5.0000000000000009" width="49.333333333333314" height="14.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="0.92779733080000004" blue="0.80914157249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="o0a-ak-e0W" secondAttribute="trailing" constant="20" id="Ap1-xu-irT"/>
+                    <constraint firstAttribute="trailing" secondItem="uwK-V2-Gij" secondAttribute="trailing" constant="5" id="Dh8-xz-8dN"/>
+                    <constraint firstItem="mje-rp-Xzf" firstAttribute="leading" secondItem="aWr-GQ-gdf" secondAttribute="leading" constant="15" id="Gbt-k9-oc8"/>
+                    <constraint firstItem="mje-rp-Xzf" firstAttribute="top" secondItem="aWr-GQ-gdf" secondAttribute="top" constant="20" id="Lp2-73-RAH"/>
+                    <constraint firstItem="o0a-ak-e0W" firstAttribute="top" secondItem="aWr-GQ-gdf" secondAttribute="top" constant="5" id="MPO-vW-3um"/>
+                    <constraint firstItem="Xgb-co-h9d" firstAttribute="top" secondItem="aWr-GQ-gdf" secondAttribute="top" constant="45" id="ZIN-g4-huY"/>
+                    <constraint firstAttribute="trailing" secondItem="Xgb-co-h9d" secondAttribute="trailing" constant="20" symbolic="YES" id="ZRS-zP-zQt"/>
+                    <constraint firstItem="uwK-V2-Gij" firstAttribute="top" secondItem="aWr-GQ-gdf" secondAttribute="top" constant="16" id="itX-NS-WI9"/>
+                    <constraint firstAttribute="bottom" secondItem="uwK-V2-Gij" secondAttribute="bottom" constant="49" id="qnU-ZK-bGs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="clearButton" destination="Xgb-co-h9d" id="mh6-GV-B97"/>
+                <outlet property="commentLabel" destination="Rsd-5e-3SY" id="4h7-ht-OEx"/>
+                <outlet property="dateLabel" destination="uwK-V2-Gij" id="vdc-KZ-gGE"/>
+                <outlet property="houseworkLabel" destination="ri9-eY-h41" id="faI-ep-KoX"/>
+                <outlet property="notificationLabel" destination="o0a-ak-e0W" id="Dk1-wE-0CX"/>
+            </connections>
+            <point key="canvasLocation" x="109.59999999999999" y="40.64039408866995"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

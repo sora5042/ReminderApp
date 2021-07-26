@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Housework List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HouseworkListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="HouseworkListViewController" customModule="ReminderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iue-sN-rQ8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="家事リスト" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBX-ng-BWq">
+                                        <rect key="frame" x="131" y="52" width="112" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcK-5h-1Ei">
+                                        <rect key="frame" x="305" y="49" width="41" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="追加"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94333755969999999" green="0.76975896099999996" blue="0.53886234690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="LcK-5h-1Ei" firstAttribute="top" secondItem="Iue-sN-rQ8" secondAttribute="top" constant="49" id="69l-Ry-eFf"/>
+                                    <constraint firstAttribute="trailing" secondItem="LcK-5h-1Ei" secondAttribute="trailing" constant="29" id="MPY-k8-atu"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TNC-U8-Sjg">
+                                <rect key="frame" x="0.0" y="108" width="375" height="704"/>
+                                <color key="backgroundColor" red="1" green="0.96792284500000003" blue="0.92524199419999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="704" id="zYC-hl-ib7"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellId" rowHeight="90" id="zyV-Nl-roO" customClass="HouseListTableViewCell" customModule="ReminderApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zyV-Nl-roO" id="UrQ-IR-xGU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iue-sN-rQ8" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="CoA-yP-oIl"/>
+                            <constraint firstAttribute="bottom" secondItem="TNC-U8-Sjg" secondAttribute="bottom" id="HMK-rE-KgO"/>
+                            <constraint firstItem="TNC-U8-Sjg" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="LzY-8R-9cg"/>
+                            <constraint firstItem="Iue-sN-rQ8" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="MRx-RP-3Oq"/>
+                            <constraint firstItem="TNC-U8-Sjg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="btT-Jk-VuP"/>
+                            <constraint firstItem="Iue-sN-rQ8" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="duO-x1-Eoo"/>
+                            <constraint firstItem="TNC-U8-Sjg" firstAttribute="top" secondItem="Iue-sN-rQ8" secondAttribute="bottom" id="gei-HR-1Ae"/>
+                            <constraint firstItem="Iue-sN-rQ8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pAy-6C-Og2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="LcK-5h-1Ei" id="ftG-h9-chj"/>
+                        <outlet property="houseworkListTableView" destination="TNC-U8-Sjg" id="wbI-IO-cs2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="89.408866995073893"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
