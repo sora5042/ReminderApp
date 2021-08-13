@@ -14,7 +14,7 @@
 Xcode 12.5.1  
 Swift 5.4  
   
-## ライブラリ (SwiftPackageManagerでインストール) 
+## ライブラリ (Swift Package Managerでインストール) 
 [GRDB 5.8.0](https://github.com/groue/GRDB.swift)  
 [IQKeyboardManagerSwift 6.5.6](https://github.com/hackiftekhar/IQKeyboardManager)  
 [Parchment 3.0.1](https://github.com/rechsteiner/Parchment)  
